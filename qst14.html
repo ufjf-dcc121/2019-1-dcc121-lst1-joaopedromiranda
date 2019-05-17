@@ -26,6 +26,15 @@
         
         x.contentEditable=true;
         y.contentEditable=true;
+
+        botao.addEventListener("click",calcular);
+        
+        function calcular(){
+            vX=parseInt(x.textContent);
+            vY=parseInt(y.textContent);
+            produto.textContent="O produto de "+vX+" e "+vY+" é "+(vX*vY)+"!";
+            soma.textContent="A soma de "+vX+" e "+vY+" é "+(vX+vY)+"!"; 
+        }
     </script>
 </body>
 </html>
