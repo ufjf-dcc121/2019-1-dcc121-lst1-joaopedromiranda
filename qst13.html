@@ -6,6 +6,12 @@
 </head>
 <body>
     <div id="interativo">Clique-me!</div>
-        <script></script>   
+        <script>
+        var interativo;
+        interativo=document.getElementById("interativo");
+        interativo.addEventListener("click",addTexto);
+        function addTexto(){
+            this.textContent="Funcionou!";
+        </script>   
 </body>
 </html>
