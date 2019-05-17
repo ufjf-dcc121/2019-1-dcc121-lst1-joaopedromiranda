@@ -9,6 +9,23 @@
     <div id="y">5</div>
     <div id="produto"></div>
     <div id="soma"></div>
-        <script></script>
+        <script>
+        var x;
+        var y;
+        var produto;
+        var soma;
+
+        x=document.getElementById("x");
+        y=document.getElementById("y");
+        produto=document.getElementById("produto");
+        soma=document.getElementById("soma");
+
+        tX=parseInt(x.textContent);
+        tY=parseInt(y.textContent);
+
+        produto.textContent="O produto de "+tX+" e "+tY+" é "+(tX*tY)+"!";
+        soma.textContent="A soma de "+tX+" e "+tY+" é "+(tX+tY)+"!";
+        
+        </script>
 </body>
 </html>
