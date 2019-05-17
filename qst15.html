@@ -58,7 +58,12 @@
             
             if(media>=70) resultado.textContent = "Parabéns "+nome.textContent+"! Você está aprovado com média "+media+"!"
             else resultado.textContent = "Você está reprovado com média "+media+"!"
-            }
+            
+            if(nConfeitaria < 60) melhorias.innerHTML = "<p>"+nome.textContent+", considere estudar mais Confeitaria!</p>"
+            if(nCoberturas < 60) melhorias.innerHTML += "<p>"+nome.textContent+", considere estudar mais Coberturas!</p>"
+            if(nBolos < 60) melhorias.innerHTML += "<p>"+nome.textContent+", considere estudar mais Broas e Bolos!</p>" 
+        
+        }
         </script>
     </main>
 </body>
