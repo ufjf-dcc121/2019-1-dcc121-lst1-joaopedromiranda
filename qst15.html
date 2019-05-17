@@ -39,6 +39,7 @@
             bolos.contentEditable = true
 
             botaoLimpar.addEventListener("click",limparClick)
+            botaoAvaliar.addEventListener("click",avaliarClick)
             
             function limparClick(){
             resultado.textContent = ""
@@ -46,6 +47,18 @@
             
         }
 
+            function avaliarClick(){
+            limparClick()
+
+            var nConfeitaria = parseFloat(confeitaria.textContent)
+            var nCoberturas = parseFloat(coberturas.textContent)
+            var nBolos = parseFloat(bolos.textContent)
+            
+            media = (nConfeitaria+nCoberturas+nBolos)/3
+            
+            if(media>=70) resultado.textContent = "Parabéns "+nome.textContent+"! Você está aprovado com média "+media+"!"
+            else resultado.textContent = "Você está reprovado com média "+media+"!"
+            }
         </script>
     </main>
 </body>
